@@ -1,0 +1,28 @@
+// @mixin centered {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+@mixin even {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// @mixin circle ($width, $height, $border-radius) {
+//   width: $width;
+//   height: $height;
+//   border-radius: $border-radius;
+// }
+// @mixin font ($weight, $size, $height) {
+//   font-weight: $weight;
+//   font-size: $size;
+//   line-height: $height;
+// }
+// @mixin after-line ($width) {
+//   content: '';
+//   display: block;
+//   width: $width;
+//   height: .3rem;
+//   margin-top: .5rem;
+//   background-color: $back-others;
+// }
