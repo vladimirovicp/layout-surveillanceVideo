@@ -69,7 +69,17 @@
         }
         // 30:22
     }
-    &__phone {}
+    &__phone {
+        margin-right: .6rem;
+    }
+
+    &__modal{
+        @include font(300, 1.2rem, 133%);
+        text-decoration-line: underline;
+        text-align: center;
+        cursor: pointer;
+    }
+
     &__burger-wrap {
         width: 4.3rem;
         height: 4.3rem;
@@ -81,6 +91,15 @@
         svg {
             width: 70%;
             height: 70%;
+        }
+    }
+}
+
+@media(max-width:48em){
+    .header{
+        width: 100%;
+        &__items{
+            display: none;
         }
     }
 }
