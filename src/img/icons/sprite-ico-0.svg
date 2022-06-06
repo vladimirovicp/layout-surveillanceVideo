@@ -1,6 +1,9 @@
 <svg width="0" height="0" class="hidden">
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3" id="arrow-select-telephone">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3" id="triangle">
     <path d="M3 3L-3.48259e-07 1.19051e-08L6 5.36442e-07L3 3Z" fill="#CC3333"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 17" id="arrow-select-telephone">
+    <path d="M9.5 1L2 8.5L9.5 16" stroke="#FF0000" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51" id="burger">
     <g filter="url(#filter0_d_1750_2)">
