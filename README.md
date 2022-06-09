@@ -8,3 +8,12 @@ https://www.figma.com/file/IwMN3ISwih8gEilxrtbU3x/Control-(%D0%9A%D0%BE%D0%BD%D1
 ### svg
 > * https://icomoon.io/ 
 > * https://svgsprit.es
+
+
+## Слайдер swiper
+> * https://swiperjs.com/get-started
+> * Download assets https://unpkg.com/swiper@8/
+> * * swiper-bundle.js
+> * * swiper-bundle.min.js
+> * * swiper-bundle.min.css
+> * * swiper-bundle.css
