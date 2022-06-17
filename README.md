@@ -18,3 +18,7 @@ https://www.figma.com/file/IwMN3ISwih8gEilxrtbU3x/Control-(%D0%9A%D0%BE%D0%BD%D1
 > * * swiper-bundle.min.css
 > * * swiper-bundle.css
 > * https://swiperjs.com/swiper-api#fade-effect
+
+## Конвертер PNG в WEBP
+> * https://convertio.co/ru/png-webp/
+> * https://squoosh.app/

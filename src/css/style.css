@@ -23,8 +23,8 @@ body {
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  color: #282828;
-  background-color: #F8F8F8; }
+  color: #000000;
+  background-color: #ffffff; }
 
 input,
 textarea {
@@ -32,6 +32,12 @@ textarea {
   line-height: inherit;
   margin: 0;
   padding: 0; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
 
 a {
   color: unset; }
@@ -197,6 +203,9 @@ input[type="number"] {
     text-decoration-line: underline;
     text-align: center;
     cursor: pointer; }
+  .header__call {
+    display: flex;
+    flex-direction: column; }
   .header__burger-wrap {
     width: 4.3rem;
     height: 4.3rem;

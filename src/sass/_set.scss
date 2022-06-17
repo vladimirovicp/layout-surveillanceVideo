@@ -26,8 +26,8 @@ body {
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    color: #282828; // цвет по умолчанию текста по сайту
-    background-color: #F8F8F8; //
+    color: #000000; // цвет по умолчанию текста по сайту
+    background-color: #ffffff; //
 }
 
 input,
@@ -36,6 +36,15 @@ textarea {
     line-height: inherit;
     margin: 0;
     padding: 0;
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
 }
 
 a {
