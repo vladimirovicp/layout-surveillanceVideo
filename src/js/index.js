@@ -41,10 +41,10 @@ window.addEventListener('DOMContentLoaded', () => {
             el: '.hero__pagination',
         },
 
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
+        navigation: {
+            nextEl: '.hero__arrow-next',
+            prevEl: '.hero__arrow-prev',
+        },
 
     });
 

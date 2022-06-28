@@ -123,6 +123,56 @@ input[type="number"] {
     padding: 0 4rem;
     width: 100%; } }
 
+.slider__arrow {
+  width: 7.4rem;
+  height: 7.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid rgba(228, 45, 45, 0.05);
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translate(0, -50%); }
+  .slider__arrow > span {
+    width: 6.1rem;
+    height: 6.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(228, 45, 45, 0.25); }
+    .slider__arrow > span > span {
+      width: 4.9rem;
+      height: 4.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #fff; }
+  .slider__arrow svg {
+    width: 40%;
+    height: 40%; }
+  .slider__arrow-prev {
+    left: 6rem; }
+  .slider__arrow-next {
+    right: 6rem; }
+
+@media (max-width: 48em) {
+  .slider__arrow {
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid rgba(228, 45, 45, 0.05); }
+    .slider__arrow > span {
+      width: 8rem;
+      height: 8rem;
+      border: 0.2rem solid rgba(228, 45, 45, 0.25); }
+      .slider__arrow > span > span {
+        width: 6rem;
+        height: 6rem; } }
+
 .header {
   position: absolute;
   top: 0;
@@ -243,7 +293,7 @@ input[type="number"] {
     height: 31.7rem;
     background: rgba(0, 0, 0, 0.04);
     position: absolute;
-    left: 10rem;
+    left: 15rem;
     bottom: -4.5rem;
     transform: rotate(135deg); }
   .hero .container {
@@ -278,22 +328,6 @@ input[type="number"] {
     font-size: 1.6rem;
     line-height: 150%;
     color: #5C5C5C; }
-  .hero__button {
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 131%;
-    color: #fff; }
-    .hero__button-outline {
-      display: inline-block;
-      background: transparent;
-      padding: 3.2rem 1rem;
-      border: 0.1rem solid rgba(248, 70, 70, 0.05);
-      border-radius: 1rem; }
-    .hero__button-border {
-      padding: 2.8rem 1rem 2.3rem 1rem;
-      background: transform;
-      border: 0.1rem solid rgba(248, 70, 70, 0.25);
-      border-radius: 1rem; }
   .hero__decor {
     width: 37rem;
     position: absolute;
@@ -322,9 +356,9 @@ input[type="number"] {
 
 @media (max-width: 48em) {
   .hero::after {
-    height: 26.7rem;
+    height: 38rem;
     left: 6rem;
-    bottom: -3.5rem; }
+    bottom: -5.5rem; }
   .hero__bg {
     bottom: -39rem; }
   .hero__decor {
@@ -332,13 +366,43 @@ input[type="number"] {
     bottom: 0;
     top: auto;
     height: 36rem; }
+  .hero__header {
+    margin-bottom: 7rem; }
   .hero__text {
+    width: 100%;
     font-size: 2.8rem; }
-  .hero__button {
-    font-size: 2.4rem; } }
+  .hero .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    .hero .container .button-outline {
+      align-self: flex-start; }
+  .hero__arrow-prev {
+    left: 1rem; }
+  .hero__arrow-next {
+    right: 1rem; } }
 
 .button {
   padding: 1.5rem 4rem;
   background: linear-gradient(90.11deg, #FB4747 0.52%, #CC3333 98.44%);
   box-shadow: 0px 0.8rem 3rem -0.5rem rgba(124, 23, 23, 0.2);
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 131%;
+  color: #fff; }
+  .button-outline {
+    display: inline-block;
+    background: transparent;
+    padding: 3.2rem 1rem;
+    border: 0.1rem solid rgba(248, 70, 70, 0.05);
+    border-radius: 1rem; }
+  .button-border {
+    padding: 2.8rem 1rem 2.3rem 1rem;
+    background: transform;
+    border: 0.1rem solid rgba(248, 70, 70, 0.25);
+    border-radius: 1rem; }
+
+@media (max-width: 48em) {
+  .button {
+    font-size: 2.4rem; } }
