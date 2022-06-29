@@ -1,0 +1,5 @@
+.title {
+    text-align: center;
+    @include center;
+    flex-direction: column;
+}
