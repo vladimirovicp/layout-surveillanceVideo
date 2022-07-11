@@ -92,7 +92,9 @@
             bottom: -5.5rem;
         }
         &__bg {
-            bottom: -39rem;
+            top: auto;
+            // bottom: -39rem;
+            bottom: 5rem;
         }
         &__decor {
             width: 12rem;

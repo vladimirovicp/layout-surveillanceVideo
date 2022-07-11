@@ -1,5 +1,39 @@
 .title {
     text-align: center;
-    @include center;
+    @include centered;
     flex-direction: column;
+    &__header {
+        position: relative;
+        @include font(700, 3.6rem, 133%);
+        margin-bottom: 1.8rem;
+    }
+    &__subheader {
+        max-width: 68rem;
+        @include font(400, 1.6rem, 150%);
+        color: #5c5c5c;
+    }
+    &__border {
+        &-mouting::after {
+            @include borderBot(46.2rem);
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .title {
+        &__header {
+            @include font(700, 4.6rem, 133%);
+            margin-bottom: 3rem;
+        }
+        &__subheader {
+            font-size: 3rem;
+        }
+        &__border {
+            &-mouting::after {
+                width: 42.2rem;
+                right: 7rem;
+            }
+        }
+    }
 }
