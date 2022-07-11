@@ -425,12 +425,22 @@ input[type="number"] {
     font-size: 3.6rem;
     line-height: 133%;
     margin-bottom: 1.8rem; }
+    .title__header--small {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 133%;
+      color: #fff; }
   .title__subheader {
     max-width: 68rem;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
     color: #5c5c5c; }
+    .title__subheader--small {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 150%;
+      color: #fff; }
   .title__border-mouting::after {
     content: '';
     height: .5rem;
@@ -439,6 +449,11 @@ input[type="number"] {
     bottom: 0;
     width: 46.2rem;
     right: 0; }
+  .title--left {
+    max-width: 77.5%;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 28rem; }
 
 @media (max-width: 48em) {
   .title__header {
@@ -450,7 +465,14 @@ input[type="number"] {
     font-size: 3rem; }
   .title__border-mouting::after {
     width: 42.2rem;
-    right: 7rem; } }
+    right: 7rem; }
+  .title--left {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center; } }
 
 .mouting {
   padding-top: 7.2rem;
@@ -506,8 +528,8 @@ input[type="number"] {
     .mouting__item::before {
       width: 6rem;
       height: 6.5rem;
-      left: -1rem;
-      top: -2rem; }
+      left: -0.7rem;
+      top: -1.7rem; }
   .mouting__title {
     font-size: 3rem; }
   .mouting__description {
@@ -515,3 +537,29 @@ input[type="number"] {
   .mouting__img {
     width: 8.3rem;
     height: 8.3rem; } }
+
+.garant {
+  position: relative;
+  background: #333333;
+  padding-top: 7.7rem;
+  padding-bottom: 7.3rem; }
+  .garant__bg {
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0; }
+  .garant .container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center; }
+
+@media (max-width: 48em) {
+  .garant__bg {
+    display: none; }
+  .garant .container {
+    flex-direction: column; }
+  .garant .title--left {
+    margin-bottom: 4rem; } }

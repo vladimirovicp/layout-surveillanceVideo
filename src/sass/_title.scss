@@ -6,17 +6,31 @@
         position: relative;
         @include font(700, 3.6rem, 133%);
         margin-bottom: 1.8rem;
+        &--small {
+            @include font(700, 2.4rem, 133%);
+            color: #fff;
+        }
     }
     &__subheader {
         max-width: 68rem;
         @include font(400, 1.6rem, 150%);
         color: #5c5c5c;
+        &--small {
+            @include font(400, 1.8rem, 150%);
+            color: #fff;
+        }
     }
     &__border {
         &-mouting::after {
             @include borderBot(46.2rem);
             right: 0;
         }
+    }
+    &--left {
+        max-width: 77.5%;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 28rem;
     }
 }
 
@@ -34,6 +48,12 @@
                 width: 42.2rem;
                 right: 7rem;
             }
+        }
+        &--left {
+            max-width: 100%;
+            @include centered;
+            padding-left: 0;
+            text-align: center;
         }
     }
 }
