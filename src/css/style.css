@@ -449,6 +449,14 @@ input[type="number"] {
     bottom: 0;
     width: 46.2rem;
     right: 0; }
+  .title__border-install::after {
+    content: '';
+    height: .5rem;
+    background-color: #da3939;
+    position: absolute;
+    bottom: 0;
+    width: 64.5rem;
+    left: 0; }
   .title--left {
     max-width: 77.5%;
     text-align: left;
@@ -542,7 +550,7 @@ input[type="number"] {
   position: relative;
   background: #333333;
   padding-top: 7.7rem;
-  padding-bottom: 7.3rem; }
+  padding-bottom: 6.2rem; }
   .garant__bg {
     width: 100%;
     position: absolute;
@@ -563,3 +571,7 @@ input[type="number"] {
     flex-direction: column; }
   .garant .title--left {
     margin-bottom: 4rem; } }
+
+.install {
+  padding-top: 7.2rem;
+  padding-bottom: 8.5rem; }

@@ -25,6 +25,10 @@
             @include borderBot(46.2rem);
             right: 0;
         }
+        &-install::after {
+            @include borderBot(64.5rem);
+            left: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
