@@ -52,6 +52,10 @@
                 width: 42.2rem;
                 right: 7rem;
             }
+            &-install::after {
+                width: 32rem;
+                left: 11rem;
+            }
         }
         &--left {
             max-width: 100%;
