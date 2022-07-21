@@ -29,6 +29,10 @@
             @include borderBot(64.5rem);
             left: 0;
         }
+        &-advantages::after {
+            @include borderBot(25.6rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
@@ -55,6 +59,10 @@
             &-install::after {
                 width: 32rem;
                 left: 11rem;
+            }
+            &-advantages::after {
+                width: 33rem;
+                left: 14rem;
             }
         }
         &--left {
