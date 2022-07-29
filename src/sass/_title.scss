@@ -33,6 +33,10 @@
             @include borderBot(25.6rem);
             right: 0;
         }
+        &-why::after {
+            @include borderBot(67.3rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
@@ -63,6 +67,10 @@
             &-advantages::after {
                 width: 33rem;
                 left: 14rem;
+            }
+            &-why::after {
+                width: 22.5rem;
+                left: 16rem;
             }
         }
         &--left {
