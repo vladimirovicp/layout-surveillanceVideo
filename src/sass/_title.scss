@@ -37,6 +37,10 @@
             @include borderBot(67.3rem);
             right: 0;
         }
+        &-brands::after {
+            @include borderBot(43.6rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
@@ -49,7 +53,7 @@
 @media (max-width: 48em) {
     .title {
         &__header {
-            @include font(700, 4.6rem, 133%);
+            @include font(700, 4.5rem, 133%);
             margin-bottom: 3rem;
         }
         &__subheader {
@@ -58,7 +62,7 @@
         &__border {
             &-mouting::after {
                 width: 42.2rem;
-                right: 7rem;
+                right: 6rem;
             }
             &-install::after {
                 width: 32rem;
@@ -71,6 +75,10 @@
             &-why::after {
                 width: 22.5rem;
                 left: 16rem;
+            }
+            &-brands::after{
+                width: 30rem;
+                right: 0;
             }
         }
         &--left {

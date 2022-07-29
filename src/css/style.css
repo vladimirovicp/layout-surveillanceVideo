@@ -473,6 +473,14 @@ input[type="number"] {
     bottom: 0;
     width: 67.3rem;
     right: 0; }
+  .title__border-brands::after {
+    content: '';
+    height: .5rem;
+    background-color: #da3939;
+    position: absolute;
+    bottom: 0;
+    width: 43.6rem;
+    right: 0; }
   .title--left {
     max-width: 77.5%;
     text-align: left;
@@ -482,14 +490,14 @@ input[type="number"] {
 @media (max-width: 48em) {
   .title__header {
     font-weight: 700;
-    font-size: 4.6rem;
+    font-size: 4.5rem;
     line-height: 133%;
     margin-bottom: 3rem; }
   .title__subheader {
     font-size: 3rem; }
   .title__border-mouting::after {
     width: 42.2rem;
-    right: 7rem; }
+    right: 6rem; }
   .title__border-install::after {
     width: 32rem;
     left: 11rem; }
@@ -499,6 +507,9 @@ input[type="number"] {
   .title__border-why::after {
     width: 22.5rem;
     left: 16rem; }
+  .title__border-brands::after {
+    width: 30rem;
+    right: 0; }
   .title--left {
     max-width: 100%;
     display: flex;
@@ -867,3 +878,45 @@ input[type="number"] {
     font-size: 3rem; }
   .why__subheader {
     font-size: 2.6rem; } }
+
+.brands {
+  position: relative;
+  padding-bottom: 6rem; }
+  .brands__slider {
+    padding-bottom: 2rem;
+    padding-top: 1rem; }
+  .brands__slide {
+    padding: 3rem 7.2rem; }
+    .brands__slide picture {
+      display: block;
+      width: 12.5rem;
+      height: 5.7rem; }
+    .brands__slide::before {
+      content: '';
+      position: absolute;
+      width: 3.1rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+      background: url("../img/icons/video-border.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: -.35rem;
+      top: -.35rem; }
+    .brands__slide::after {
+      content: '';
+      position: absolute;
+      width: 3.1rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+      background: url("../img/icons/video-border.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(180deg);
+      right: -.45rem;
+      bottom: -.35rem; }
+
+@media (max-width: 48em) {
+  .brands .slider__arrow {
+    display: none; } }
