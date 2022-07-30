@@ -651,7 +651,11 @@
         </section>
         <section class="budget">
             <div class="budget__bg">
-                <img src="./img/budget/budget-with-triagle.png" alt="">
+                <picture>
+                    <source srcset="./img/budget/budget-with-triagle.avif" type="image/avif">
+                    <source srcset="./img/budget/budget-with-triagle.webp" type="image/webp">
+                    <img src="./img/budget/budget-with-triagle.png" alt="video">
+                </picture>
             </div>
             <div class="container">
                 <div class="title title--center">
@@ -663,6 +667,42 @@
                         <button class="button">Оформить заявку</button>
                     </span>
                 </span>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video__bg">
+                <picture>
+                    <source srcset="./img/video/video-bg.avif" type="image/avif">
+                    <source srcset="./img/video/video-bg.webp" type="image/webp">
+                    <img src="./img/video/video-bg.png" alt="video">
+                </picture>
+            </div>
+
+            <div class="preview__play">
+                <div class="preview__wrapper preview__wrapper--first">
+                    <div class="preview__wrapper preview__wrapper--second">
+                        <div class="preview__button">
+                            <div class="preview__triangle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="title">
+                    <h2 class="title__header title__border-video">Видео монтажа систем видеонаблюдения</h2>
+                </div>
+                <div class="video__wrap">
+                    <div class="video__player">
+                        <div class="preview">
+                            <div class="preview__img">
+                                <img src="./img/video/video-preview.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pnCsKsq_ztU" title="5 ОШИБОК при установке видеонаблюдения / Ошибки монтажа" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video__text">5 ошибок при установке систем видеонаблюдения</div>
+                </div>
             </div>
         </section>
 

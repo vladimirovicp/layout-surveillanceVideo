@@ -41,6 +41,10 @@
             @include borderBot(43.6rem);
             right: 0;
         }
+        &-video::after {
+            @include borderBot(45.6rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
@@ -88,6 +92,10 @@
             &-brands::after{
                 width: 30rem;
                 right: 0;
+            }
+            &-video::after{
+                width: 42rem;
+                right: 6rem;
             }
         }
         &--left {
