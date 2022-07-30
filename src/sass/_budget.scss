@@ -1,0 +1,34 @@
+.budget{
+    position: relative;
+    background-color: #333;
+    margin-top: 3rem;
+    padding-top: 5.6rem;
+    padding-bottom: 4.7rem;
+
+    .button-outline{
+        padding: 1.5rem 1rem;
+    }
+    &__bg{
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .container{
+        position: relative;
+        @include even;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 48em){
+    .budget{
+        &__bg{
+            display: none;
+        }
+        .container{
+            flex-direction: column;
+        }
+    }
+}

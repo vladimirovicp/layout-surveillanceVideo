@@ -14,7 +14,7 @@
     }
     &-border {
         padding: 2.8rem 1rem 2.3rem 1rem;
-        background: transform;
+        background: transparent;
         border: .1rem solid rgba(248, 70, 70, 0.25);
         border-radius: 1rem;
     }
@@ -23,5 +23,9 @@
 @media(max-width: 48em) {
     .button {
         font-size: 2.4rem;
+
+        &-border {
+            padding: 3.5rem 1rem 2.3rem 1rem;
+        }
     }
 }

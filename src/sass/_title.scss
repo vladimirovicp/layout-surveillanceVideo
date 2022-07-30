@@ -48,6 +48,15 @@
         align-items: flex-start;
         padding-left: 28rem;
     }
+    &--center{
+        max-width: 77.5%;
+        text-align: center;
+        align-items: center;
+        padding-left: 28rem;
+        .title__header--small{
+            margin-bottom: 4.5rem;
+        }
+    }
 }
 
 @media (max-width: 48em) {
@@ -86,6 +95,15 @@
             @include centered;
             padding-left: 0;
             text-align: center;
+        }
+        &--center{
+            max-width: 100%;
+            @include centered;
+            padding-left: 0;
+            margin-bottom: 4rem;
+            .title__header--small{
+                margin-bottom: 4.5rem;
+            }
         }
     }
 }
