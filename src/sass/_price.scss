@@ -1,0 +1,58 @@
+.price {
+    position: relative;
+    padding-top: 7.2rem;
+    padding-bottom: 11.2rem;
+    background: linear-gradient(180deg, #f4f4f4 0%, #e9e9e9 100%);
+    &__bg {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.7rem;
+    }
+    &__card {
+        position: relative;
+        width: 26.8rem;
+        @include centered;
+        flex-direction: column;
+        flex-direction: .7rem;
+        text-align: center;
+    }
+    &__name {
+        width: 100%;
+        @include font(700, 1.8rem, 133%);
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.09);
+        border-radius: 1rem 1rem 1rem 0;
+        &::before {
+            @include borderAngle(5.7rem, 5.8rem);
+            left: -.9rem;
+            top: -1.4rem;
+        }
+        &::after {
+            @include borderAngle(5.7rem, 5.8rem);
+            right: -.9rem;
+            top: 1.4rem;
+            transform: rotate(180deg);
+        }
+    }
+    &__description {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        padding-top: 2.5rem;
+    }
+    &__coin {
+        margin-bottom: 1.4rem;
+        @include font(700, 2.4rem, 133%);
+        color: #cf3535;
+        span {
+            font-size: 3.6rem;
+        }
+    }
+    // 2022-08-15_161017.png
+}

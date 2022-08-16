@@ -45,6 +45,10 @@
             @include borderBot(45.6rem);
             right: 0;
         }
+        &-price::after {
+            @include borderBot(28.1rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
@@ -52,12 +56,12 @@
         align-items: flex-start;
         padding-left: 28rem;
     }
-    &--center{
+    &--center {
         max-width: 77.5%;
         text-align: center;
         align-items: center;
         padding-left: 28rem;
-        .title__header--small{
+        .title__header--small {
             margin-bottom: 4.5rem;
         }
     }
@@ -89,11 +93,11 @@
                 width: 22.5rem;
                 left: 16rem;
             }
-            &-brands::after{
+            &-brands::after {
                 width: 30rem;
                 right: 0;
             }
-            &-video::after{
+            &-video::after {
                 width: 42rem;
                 right: 6rem;
             }
@@ -104,12 +108,12 @@
             padding-left: 0;
             text-align: center;
         }
-        &--center{
+        &--center {
             max-width: 100%;
             @include centered;
             padding-left: 0;
             margin-bottom: 4rem;
-            .title__header--small{
+            .title__header--small {
                 margin-bottom: 4.5rem;
             }
         }
