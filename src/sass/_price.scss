@@ -54,5 +54,117 @@
             font-size: 3.6rem;
         }
     }
-    // 2022-08-15_161017.png
+    &__mounting {
+        margin-bottom: 1rem;
+        @include font(600, 1.8rem, 150%);
+        color: #5c5c5c;
+    }
+    &__corr {
+        margin-bottom: 2.5rem;
+        @include font(400, 1.4rem, 150%);
+        color: #5c5c5c;
+    }
+    &__img {
+        width: 25.3rem;
+        height: 18.2rem;
+        margin: 0 auto 2.6rem auto;
+        padding-bottom: 1rem;
+    }
+    &__title {
+        margin-bottom: 1.4rem;
+        @include font(700, 1.8rem, 133%);
+    }
+    &__list {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    &__item {
+        position: relative;
+        padding-left: 2rem;
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+        @include font(400, 1.8rem, 150%);
+        color: #5c5c5c;
+        &:before {
+            content: '';
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            display: block;
+            background: url('../img/price/dot.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+    .button-outline,
+    .button-border,
+    .price__button {
+        width: 100%;
+    }
+    .button-border {
+        display: inline-block;
+        padding: .8rem 1rem;
+    }
+}
+
+@media(max-width: 48em) {
+    .price {
+        &__cards {
+            flex-direction: column;
+        }
+        &__card {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
+        }
+        &__name {
+            font-size: 3.6rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            &::after {
+                top: 7rem;
+            }
+        }
+        &__coin {
+            font-size: 3.8rem;
+            span {
+                font-size: 5rem;
+            }
+        }
+        &__mounting {
+            font-size: 3.6rem;
+        }
+        &__corr {
+            font-size: 2.8rem;
+        }
+        &__img {
+            width: 100%;
+            height: 18.2rem;
+        }
+        &__title {
+            font-size: 3.6rem;
+        }
+        &__item {
+            padding-left: 5rem;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            font-size:3.2rem;
+            &:before {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        &__button {
+            font-size: 3.4rem;
+            padding: 3rem 4rem;
+        }
+    }
 }

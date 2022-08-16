@@ -101,6 +101,10 @@
                 width: 42rem;
                 right: 6rem;
             }
+            &-price::after {
+                width: 20rem;
+                right: 17rem;
+            }
         }
         &--left {
             max-width: 100%;
