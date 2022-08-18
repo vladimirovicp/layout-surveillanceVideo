@@ -19,7 +19,7 @@
         width: 26.8rem;
         @include centered;
         flex-direction: column;
-        flex-direction: .7rem;
+        padding-bottom: .7rem;
         text-align: center;
     }
     &__name {
@@ -102,12 +102,12 @@
             transform: translate(0, -50%);
         }
     }
-    .button-outline,
-    .button-border,
+    .button__outline,
+    .button__border,
     .price__button {
         width: 100%;
     }
-    .button-border {
+    .button__border {
         display: inline-block;
         padding: .8rem 1rem;
     }

@@ -389,6 +389,7 @@ input[type="number"] {
     right: 1rem; } }
 
 .button {
+  display: inline-block;
   padding: 1.5rem 4rem;
   background: linear-gradient(90.11deg, #FB4747 0.52%, #CC3333 98.44%);
   box-shadow: 0px 0.8rem 3rem -0.5rem rgba(124, 23, 23, 0.2);
@@ -397,16 +398,16 @@ input[type="number"] {
   font-size: 1.6rem;
   line-height: 131%;
   color: #fff; }
-  .button-outline {
+  .button__outline {
     display: inline-block;
     background: transparent;
     padding: 3.2rem 1rem;
     border: 0.1rem solid rgba(248, 70, 70, 0.05);
     border-radius: 1rem; }
-  .button-border {
+  .button__border {
     padding: 2.8rem 1rem 2.3rem 1rem;
     background: transparent;
-    border: 0.1rem solid rgba(248, 70, 70, 0.25);
+    border: 0.15rem solid rgba(248, 70, 70, 0.25);
     border-radius: 1rem; }
 
 @media (max-width: 48em) {
@@ -549,6 +550,9 @@ input[type="number"] {
   .title__border-price::after {
     width: 20rem;
     right: 17rem; }
+  .title__border-information::after {
+    width: 29.8rem;
+    left: 12rem; }
   .title--left {
     max-width: 100%;
     display: flex;
@@ -1181,7 +1185,7 @@ input[type="number"] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-direction: .7rem;
+    padding-bottom: .7rem;
     text-align: center; }
   .price__name {
     width: 100%;
@@ -1277,11 +1281,11 @@ input[type="number"] {
       left: 0;
       top: 50%;
       transform: translate(0, -50%); }
-  .price .button-outline,
-  .price .button-border,
+  .price .button__outline,
+  .price .button__border,
   .price .price__button {
     width: 100%; }
-  .price .button-border {
+  .price .button__border {
     display: inline-block;
     padding: .8rem 1rem; }
 
@@ -1347,6 +1351,8 @@ input[type="number"] {
     .information__img picture {
       width: 100%;
       height: 100%; }
+      .information__img picture img {
+        border-radius: 1rem 1rem 0 0; }
   .information__description {
     height: 20rem;
     overflow: auto;
@@ -1361,3 +1367,30 @@ input[type="number"] {
     font-size: 1.4rem;
     line-height: 150%;
     color: #5c5c5c; }
+  .information .button__outline {
+    display: flex;
+    justify-content: center; }
+  .information .button__border {
+    padding: 1rem; }
+
+@media (max-width: 48em) {
+  .information__list {
+    flex-wrap: wrap; }
+  .information__card {
+    max-width: 100%; }
+    .information__card:not(:last-child) {
+      margin-bottom: 6rem; }
+  .information__description {
+    height: 35rem; }
+  .information__title {
+    font-size: 3.6rem;
+    margin-bottom: 1rem; }
+  .information__text {
+    font-size: 2.8rem; }
+  .information .button__border,
+  .information .information__button {
+    width: 100%; }
+  .information .information__button {
+    font-size: 3.4rem;
+    padding: 3rem 4rem;
+    text-align: center; } }

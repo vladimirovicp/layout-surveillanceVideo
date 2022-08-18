@@ -109,6 +109,10 @@
                 width: 20rem;
                 right: 17rem;
             }
+            &-information::after {
+                width: 29.8rem;
+                left: 12rem;
+            }
         }
         &--left {
             max-width: 100%;
