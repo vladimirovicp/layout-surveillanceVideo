@@ -49,6 +49,10 @@
             @include borderBot(28.1rem);
             right: 0;
         }
+        &-information::after {
+            @include borderBot(22.8rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;
