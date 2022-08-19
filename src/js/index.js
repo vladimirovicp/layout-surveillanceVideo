@@ -53,11 +53,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const swiperBrands = new Swiper('.brands__slider', {
         loop: true,
         spaceBetween: 30,
-        breakpoints:{
-            320:{
+        breakpoints: {
+            320: {
                 slidesPerView: 2
             },
-            768:{
+            768: {
                 slidesPerView: 4
             }
         },
@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     // Так никогда не делай!!!
-    if(document.querySelector('.preview__play')){
+    if (document.querySelector('.preview__play')) {
         const playVideo = document.querySelector('.preview__play');
         const preview = document.querySelector('.preview__img');
         const videoText = document.querySelector('.video__text');
@@ -88,9 +88,32 @@ window.addEventListener('DOMContentLoaded', () => {
             video.style.zIndex = '100';
             videoBg.style.zIndex = '0';
             videoWrap.style.minHeight = '50rem';
-            
+
         });
     }
 
+    // Слайдер Reviews
+    const swiperReviews = new Swiper('.reviews__slider', {
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 3
+            }
+        },
+        navigation: {
+            nextEl: '.reviews__arrow-next',
+            prevEl: '.reviews__arrow-prev',
+        },
+        pagination: {
+            el: '.reviews__pagination',
+            clickable: true,
+        },
+
+    });
 
 });
