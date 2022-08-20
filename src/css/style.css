@@ -1528,3 +1528,9 @@ input[type="number"] {
     font-size: 2.8rem; }
   .example .slider__arrow {
     top: 30%; } }
+
+.consultation {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .consultation__bg {
+    top: -5.8rem; }
