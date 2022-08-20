@@ -57,6 +57,10 @@
             @include borderBot(13.7rem);
             left: 0;
         }
+        &-example::after {
+            @include borderBot(22.4rem);
+            right: 0;
+        }
     }
     &--left {
         max-width: 77.5%;

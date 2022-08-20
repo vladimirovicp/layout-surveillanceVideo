@@ -116,4 +116,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
+        // Слайдер Example
+        const swiperExample = new Swiper('.example__slider', {
+            loop: true,
+            spaceBetween: 30,
+            // centeredSlides: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 4
+                }
+            },
+            navigation: {
+                nextEl: '.example__arrow-next',
+                prevEl: '.example__arrow-prev',
+            },
+            // pagination: {
+            //     el: '.reviews__pagination',
+            //     clickable: true,
+            // },
+    
+        });
+
 });
