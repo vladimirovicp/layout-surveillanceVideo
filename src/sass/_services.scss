@@ -1,0 +1,53 @@
+.services{
+    position: relative;
+    padding-top: 6.9rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(180deg, #f4f4f4 0%, #e9e9e9 100%);
+    &__bg{
+        position: absolute;
+        top: 17rem;
+        left: 0;
+        right: 0;
+        max-width: 104rem;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .container{
+        position: relative;
+        z-index: 10;
+    }
+    .title{
+        max-width: 100rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &__item{
+        @include font(600,1.4rem, 176%);
+    }
+
+    &__list{
+        display: grid;
+        grid-template-rows: repeat(17, 1fr);
+        grid-auto-flow: column;
+        justify-content: space-between;
+        gap: .5rem 30rem;
+    }
+}
+
+@media(max-width: 48em){
+    .services{
+        &__bg{
+            top: 31rem;
+            bottom: 0;
+        }
+        &__item{
+            font-size: 2.8rem;
+        }
+        &__list{
+            grid-template-rows: repeat(45, 1fr);
+            gap: .5rem 0;
+            max-height: 97rem;
+            overflow-y: auto;
+        }
+    }
+}

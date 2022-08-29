@@ -61,6 +61,11 @@
             @include borderBot(22.4rem);
             right: 0;
         }
+        &-services::after {
+            @include borderBot(28.7rem);
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &--left {
         max-width: 77.5%;
