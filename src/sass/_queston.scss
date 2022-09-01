@@ -88,4 +88,18 @@
     }
 }
 
-// 26:07  2364
+.active-accordion{
+  .question__question{
+    background-color: #cf3535;
+    color:#fff;
+    border-radius: 1rem;
+      .question__plus{
+        display: none;
+      }
+      .question__minus{
+        display: flex;
+      }
+  }
+}
+
+// 2368  30:43

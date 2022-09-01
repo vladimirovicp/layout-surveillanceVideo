@@ -140,11 +140,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    
 
-    if( document.querySelector('.question__item')){
-        let accordion = document.querySelector('.question__accordion');
-        let tab = accordion.querySelector('.question__item');
-        let answer = accordion.querySelectorAll('.question__answer');
+    if(document.querySelector('.question__item')){
+        const accordion = document.querySelector('.question__accordion');
+        const tab = accordion.querySelectorAll('.question__item');
+        const answer = accordion.querySelectorAll('.question__answer');
+
+        console.log('123');
 
         accordion.addEventListener('click', (e)=> {
             const target = e.target.closest('.question__item');
@@ -152,9 +155,11 @@ window.addEventListener('DOMContentLoaded', () => {
             if(target){
                 tab.forEach((item, i) => {
                     if(item === target){
-                        answer[i].classList.add('active')
+                        answer[i].classList.add('active');
+                        tab[i].classList.add('active-accordion');
                     } else {
                         answer[i].classList.remove('active');
+                        tab[i].classList.remove('active-accordion');
                     }
                 });
             }
