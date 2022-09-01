@@ -116,28 +116,49 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
-        // Слайдер Example
-        const swiperExample = new Swiper('.example__slider', {
-            loop: true,
-            spaceBetween: 30,
-            // centeredSlides: true,
-            breakpoints: {
-                320: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 4
-                }
+    // Слайдер Example
+    const swiperExample = new Swiper('.example__slider', {
+        loop: true,
+        spaceBetween: 30,
+        // centeredSlides: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 2
             },
-            navigation: {
-                nextEl: '.example__arrow-next',
-                prevEl: '.example__arrow-prev',
-            },
-            // pagination: {
-            //     el: '.reviews__pagination',
-            //     clickable: true,
-            // },
-    
-        });
+            768: {
+                slidesPerView: 4
+            }
+        },
+        navigation: {
+            nextEl: '.example__arrow-next',
+            prevEl: '.example__arrow-prev',
+        },
+        // pagination: {
+        //     el: '.reviews__pagination',
+        //     clickable: true,
+        // },
+
+    });
+
+
+    if( document.querySelector('.question__item')){
+        let accordion = document.querySelector('.question__accordion');
+        let tab = accordion.querySelector('.question__item');
+        let answer = accordion.querySelectorAll('.question__answer');
+
+        accordion.addEventListener('click', (e)=> {
+            const target = e.target.closest('.question__item');
+
+            if(target){
+                tab.forEach((item, i) => {
+                    if(item === target){
+                        answer[i].classList.add('active')
+                    } else {
+                        answer[i].classList.remove('active');
+                    }
+                });
+            }
+        })
+    }
 
 });

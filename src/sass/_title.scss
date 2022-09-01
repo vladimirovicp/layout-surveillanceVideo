@@ -66,6 +66,11 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        &-question::after {
+            @include borderBot(38.3rem);
+            right: 0;
+        }
+        
     }
     &--left {
         max-width: 77.5%;
